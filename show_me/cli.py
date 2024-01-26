@@ -112,7 +112,7 @@ def main(load_from_cache, save_to_cache, cache_file_path, debug, lines, start_ye
             x.commit_count,
             x.review_count,
         )
-        for x in repo_stats[:lines]
+        for x in repo_stats
     ]
 
     headers = ("Repo", "★", "Total", "Pulls", "Issues", "Commits", "Reviews")
